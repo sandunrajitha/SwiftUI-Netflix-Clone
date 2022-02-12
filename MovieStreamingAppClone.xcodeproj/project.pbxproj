@@ -3,10 +3,16 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A288FF627B7B53300F3F39C /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A288FF527B7B53300F3F39C /* HomeView.swift */; };
+		3A288FFA27B7B70600F3F39C /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 3A288FF927B7B70600F3F39C /* Kingfisher */; };
+		3A288FFD27B7B7A800F3F39C /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A288FFC27B7B7A800F3F39C /* Movie.swift */; };
+		3A28900027B7B85900F3F39C /* StandardHomeMovie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A288FFF27B7B85900F3F39C /* StandardHomeMovie.swift */; };
+		3A28900327B7B8CC00F3F39C /* GlobalHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A28900227B7B8CC00F3F39C /* GlobalHelpers.swift */; };
+		3A28900627B7C0FE00F3F39C /* HomeVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A28900527B7C0FE00F3F39C /* HomeVM.swift */; };
 		3AF435EC27B7A48D0035604A /* MovieStreamingAppCloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF435EB27B7A48D0035604A /* MovieStreamingAppCloneApp.swift */; };
 		3AF435EE27B7A48D0035604A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF435ED27B7A48D0035604A /* ContentView.swift */; };
 		3AF435F027B7A4960035604A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AF435EF27B7A4960035604A /* Assets.xcassets */; };
@@ -14,6 +20,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3A288FF527B7B53300F3F39C /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		3A288FFC27B7B7A800F3F39C /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		3A288FFF27B7B85900F3F39C /* StandardHomeMovie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardHomeMovie.swift; sourceTree = "<group>"; };
+		3A28900227B7B8CC00F3F39C /* GlobalHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalHelpers.swift; sourceTree = "<group>"; };
+		3A28900527B7C0FE00F3F39C /* HomeVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVM.swift; sourceTree = "<group>"; };
 		3AF435E827B7A48D0035604A /* MovieStreamingAppClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieStreamingAppClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AF435EB27B7A48D0035604A /* MovieStreamingAppCloneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieStreamingAppCloneApp.swift; sourceTree = "<group>"; };
 		3AF435ED27B7A48D0035604A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -27,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A288FFA27B7B70600F3F39C /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,6 +69,11 @@
 				3AF435EF27B7A4960035604A /* Assets.xcassets */,
 				3AF435F427B7A4960035604A /* Info.plist */,
 				3AF435F127B7A4960035604A /* Preview Content */,
+				3A288FF527B7B53300F3F39C /* HomeView.swift */,
+				3A288FFC27B7B7A800F3F39C /* Movie.swift */,
+				3A288FFF27B7B85900F3F39C /* StandardHomeMovie.swift */,
+				3A28900227B7B8CC00F3F39C /* GlobalHelpers.swift */,
+				3A28900527B7C0FE00F3F39C /* HomeVM.swift */,
 			);
 			path = MovieStreamingAppClone;
 			sourceTree = "<group>";
@@ -85,6 +102,9 @@
 			dependencies = (
 			);
 			name = MovieStreamingAppClone;
+			packageProductDependencies = (
+				3A288FF927B7B70600F3F39C /* Kingfisher */,
+			);
 			productName = MovieStreamingAppClone;
 			productReference = 3AF435E827B7A48D0035604A /* MovieStreamingAppClone.app */;
 			productType = "com.apple.product-type.application";
@@ -112,6 +132,9 @@
 				Base,
 			);
 			mainGroup = 3AF435DF27B7A48D0035604A;
+			packageReferences = (
+				3A288FF827B7B70600F3F39C /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 3AF435E927B7A48D0035604A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,7 +161,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A28900327B7B8CC00F3F39C /* GlobalHelpers.swift in Sources */,
+				3A288FF627B7B53300F3F39C /* HomeView.swift in Sources */,
+				3A28900627B7C0FE00F3F39C /* HomeVM.swift in Sources */,
 				3AF435EE27B7A48D0035604A /* ContentView.swift in Sources */,
+				3A28900027B7B85900F3F39C /* StandardHomeMovie.swift in Sources */,
+				3A288FFD27B7B7A800F3F39C /* Movie.swift in Sources */,
 				3AF435EC27B7A48D0035604A /* MovieStreamingAppCloneApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -267,6 +295,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"MovieStreamingAppClone/Preview Content\"";
 				DEVELOPMENT_TEAM = H6CZQS4HR4;
@@ -279,6 +308,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = io.CodeScope.MovieStreamingAppClone;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -289,6 +319,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"MovieStreamingAppClone/Preview Content\"";
 				DEVELOPMENT_TEAM = H6CZQS4HR4;
@@ -301,6 +332,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = io.CodeScope.MovieStreamingAppClone;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -328,6 +360,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3A288FF827B7B70600F3F39C /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.1.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3A288FF927B7B70600F3F39C /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3A288FF827B7B70600F3F39C /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3AF435E027B7A48D0035604A /* Project object */;
 }
