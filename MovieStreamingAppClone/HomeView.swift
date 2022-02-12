@@ -16,25 +16,27 @@ struct HomeView: View {
             Color.black
                 .edgesIgnoringSafeArea(.all)
             
-            ForEach(vm.allCategories, id: \.self) { category in
-                VStack {
-                    HStack {
-                        Text(category)
-                            .padding(.horizontal, 5)
-                        Spacer()
-                    }
-                    ScrollView(.horizontal, showsIndicators: false)
-                    {
-                        HStack{
-                            ForEach(vm.getMovie(forCategory: category)) { movie in
-                                StandardHomeMovie(movie: movie)
-                                    .frame(width: 100, height: 200)
-                                    .padding(.horizontal, 20)
+            ScrollView(showsIndicators: false) {
+                LazyVStack { // main vstack
+                    ForEach(vm.allCategories, id: \.self) { category in
+                        VStack {
+                            HStack {
+                                Text(category)
+                                    .padding(.horizontal, 5)
+                                Spacer()
+                            }
+                            ScrollView(.horizontal, showsIndicators: false)
+                            {
+                                LazyHStack{
+                                    ForEach(vm.getMovie(forCategory: category)) { movie in
+                                        StandardHomeMovie(movie: movie)
+                                            .frame(width: 100, height: 200)
+                                            .padding(.horizontal, 20)
+                                    }
+                                }
                             }
                         }
                     }
-                    
-                    
                 }
             }
         }
